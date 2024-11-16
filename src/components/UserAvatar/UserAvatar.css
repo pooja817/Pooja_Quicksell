@@ -1,0 +1,50 @@
+.user-avatar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.avatar-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e4e4e4;
+    color: #373737;
+    font-weight: 500;
+    border: 1px solid white;
+}
+
+.avatar-circle.small {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+}
+
+.avatar-circle.medium {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+}
+
+.avatar-circle.large {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+}
+
+.avatar-status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ddd;
+    border: 2px solid white;
+    z-index: 1;
+}
+
+.avatar-status.available {
+    background: #00b341;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f5f8;
+  overflow-x: hidden;
+}
+
+button {
+  outline: none !important;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+select:focus {
+  outline: none !important;
+}
+
+/* Responsive base font sizes */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,105 @@
+.column {
+    min-width: 300px;
+    max-width: 350px;
+    flex: 1;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-button:focus {
+    outline: none;
+}
+
+.action-button img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.6;
+}
+
+.action-button:hover img {
+    opacity: 1;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.column-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.column-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #373737;
+}
+
+.ticket-count {
+    color: #787486;
+    font-size: 14px;
+}
+
+.column-actions {
+    display: flex;
+    gap: 8px;
+}
+
+
+.column-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media (max-width: 768px) {
+    .column {
+        min-width: 280px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .column {
+        min-width: 260px;
+    }
+
+    .column-header {
+        padding: 8px;
+    }
+
+    .column-title {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 1 1 auto;
+        /* Adjust for smaller screens */
+        max-width: 100%;
+        padding: 0 8px;
+    }
+
+    .column-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+button {
+  outline: none !important;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+select:focus {
+  outline: none !important;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #f4f5f8;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 0;
+  }
+}

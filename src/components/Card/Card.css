@@ -1,0 +1,151 @@
+.card {
+    background: white;
+    border: 1px solid #e6e7eb;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    max-width: 100%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ticket-id {
+    color: #787486;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-avatar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.avatar-circle {
+    width: 24px;
+    height: 24px;
+    background: #e4e4e4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #373737;
+    border: 1px solid white;
+}
+
+.avatar-status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ddd;
+    border: 2px solid white;
+    z-index: 1;
+}
+
+.avatar-status.available {
+    background: #00b341;
+}
+
+.card-title {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.priority-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+.title-text {
+    font-size: 14px;
+    color: #373737;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.card-footer {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    background: #f4f5f8;
+    border: 1px solid #e6e7eb;
+    border-radius: 4px;
+}
+
+.tag-dot {
+    width: 8px;
+    height: 8px;
+    background: #787486;
+    border-radius: 50%;
+}
+
+.tag-text {
+    font-size: 12px;
+    color: #787486;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 13px;
+    }
+
+    .tag {
+        padding: 2px 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        max-width: 90%;
+        /* Scales cards for smaller tablets */
+        margin: 8px auto;
+    }
+
+    .title-text {
+        font-size: 13px;
+    }
+
+    .card-footer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 8px;
+    }
+
+    .ticket-id {
+        font-size: 12px;
+    }
+
+    .title-text {
+        font-size: 12px;
+    }
+}
+
