@@ -1,24 +1,23 @@
-# Pooja_Quicksell
 # QuickSell Kanban Board
 
 A responsive React-based Kanban board application that helps organize and visualize tickets with flexible grouping and sorting options.
 
 ## 🚀 Features
 
-- *Dynamic Grouping Options*
+- **Dynamic Grouping Options**
   - By Status (Todo, In Progress, Done, Canceled)
   - By Priority (No Priority, Low, Medium, High, Urgent)
   - By User
   
-- *Smart Sorting*
+- **Smart Sorting**
   - Priority-based ordering
   - Title alphabetical sorting
   
-- *Persistent Views*
+- **Persistent Views**
   - Saves your viewing preferences
   - Maintains state across page reloads
   
-- *Responsive Design*
+- **Responsive Design**
   - Mobile-friendly interface
   - Horizontal scrolling for columns
   - Consistent card widths across devices
@@ -31,27 +30,27 @@ A responsive React-based Kanban board application that helps organize and visual
 ## 🛠️ Installation
 
 1. Clone the repository:
-bash
+```bash
 git clone [your-repository-url]
 cd [repository-name]
-
+```
 
 2. Install dependencies:
-bash
+```bash
 npm install
-
+```
 
 3. Start the development server:
-bash
+```bash
 npm start
-
+```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## 🔌 API Integration
 
 The application integrates with the QuickSell API:
-- Endpoint: https://api.quicksell.co/v1/internal/frontend-assignment
+- Endpoint: `https://api.quicksell.co/v1/internal/frontend-assignment`
 - Provides tickets and users data
 - Automatic data refresh handling
 
@@ -63,7 +62,7 @@ The application integrates with the QuickSell API:
 
 ## 🏗️ Project Structure
 
-
+```
 src/
 ├── assets/
 │   └── icons/
@@ -79,14 +78,14 @@ src/
 └── utils/
     ├── helpers.js
     └── icons.js
-
+```
 
 ## 🎯 Implementation Details
 
 ### Grouping Logic
-- *Status*: Organizes tickets by their current state
-- *Priority*: Groups by urgency level (0-4)
-- *User*: Arranges tickets by assigned team member
+- **Status**: Organizes tickets by their current state
+- **Priority**: Groups by urgency level (0-4)
+- **User**: Arranges tickets by assigned team member
 
 ### State Management
 - Uses React's Context API
